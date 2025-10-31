@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+
+<html lang="es" data-theme="">
+
+<head>
+
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Loomin · Soluciones Web Digitales</title>
+
+	<meta name="description" content="Sitios y web apps modernas que funcionan: UX/UI, performance, SEO y automatización sin humo." />
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="styles.css" />
+
+	<script defer src="app.js"></script>
+
+</head>
+
+<body>
+
+	<a class="skip-link" href="#main">Saltar al contenido</a>
+
+	<!-- Header -->
+
+	<header class="header glass" role="banner">
+
+		<div class="container header__inner">
+
+			<a href="#main" class="logo" aria-label="Inicio Loomin">
+
+				<!-- Logo Loomin (OO ojos) -->
+
+				<svg class="logo-svg" width="142" height="32" viewBox="0 0 142 32" role="img" aria-label="Loomin">
+
+					<title>Loomin</title>
+
+					<g fill="none" stroke="none">
+
+						<text x="0" y="24" font-family="Mulish, system-ui, sans-serif" font-weight="800" font-size="24" fill="currentColor">L</text>
+
+						<g transform="translate(18,4)">
+
+							<ellipse cx="12" cy="12" rx="11" ry="11" fill="none" stroke="#6D28D9" stroke-width="2" />
+
+							<circle cx="12" cy="12" r="4" fill="currentColor" />
+
+						</g>
+
+						<g transform="translate(44,4)">
+
+							<ellipse cx="12" cy="12" rx="11" ry="11" fill="none" stroke="#6D28D9" stroke-width="2" />
+
+							<circle cx="12" cy="12" r="4" fill="currentColor" />
+
+						</g>
+
+						<text x="72" y="24" font-family="Mulish, system-ui, sans-serif" font-weight="800" font-size="24" fill="currentColor">MIN</text>
+
+					</g>
+
+				</svg>
+
+			</a>
+
+			<!-- Off-canvas DERECHA (50svw x 100svh) -->
+
+			<nav class="nav" id="nav" aria-label="Principal" aria-hidden="true">
+
+				<button class="nav__close" aria-label="Cerrar menú"><i data-lucide="x"></i></button>
+
+				<ul class="nav__list" role="list">
+
+					<li><a class="nav__link ripple" href="#servicios">Servicios</a></li>
+
+					<li><a class="nav__link ripple" href="#planes">Planes</a></li>
+
+					<li><a class="nav__link ripple" href="#proyectos">Proyectos</a></li>
+
+					<li><a class="nav__link ripple" href="#equipo">Equipo</a></li>
+
+					<li><a class="nav__link ripple" href="#faq">FAQ</a></li>
+
+					<li><a class="btn btn--sm btn--primary ripple" href="#contacto">Empezar</a></li>
+
+				</ul>
+
+			</nav>
+
+			<div class="header__actions">
+
+				<button class="theme-toggle" aria-label="Cambiar tema (claro/oscuro)"><i data-lucide="sun"></i></button>
+
+				<button class="menu-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú"><i data-lucide="menu"></i></button>
+
+			</div>
+
+		</div>
+
+		<div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+	</header>
+
+	<main id="main" tabindex="-1">
+
+		<!-- Hero -->
+
+		<section class="hero" aria-labelledby="hero-title">
+
+			<div class="container hero__inner">
+
+				<div class="hero__copy">
+
+					<h1 id="hero-title">Diseñamos webs que funcionan, no solo que lucen bien</h1>
+
+					<p>Transformamos tu presencia digital en un sistema veloz, accesible y medible. De visita a resultado, sin humo.</p>
+
+					<div class="hero__cta">
+
+						<a href="#servicios" class="btn btn--primary ripple">Descubrir servicios</a>
+
+						<button class="btn btn--ghost btn--celebrate ripple" data-celebrate>Celebrar</button>
+
+					</div>
+
+					<ul class="hero__bullets" role="list" aria-label="Pilares Loomin">
+
+						<li><i data-lucide="zap"></i> Performance real (Core Web Vitals)</li>
+
+						<li><i data-lucide="shield-check"></i> Accesibilidad y buenas prácticas</li>
+
+						<li><i data-lucide="search-check"></i> SEO técnico sin trucos</li>
+
+						<li><i data-lucide="workflow"></i> Automatización inteligente</li>
+
+					</ul>
+
+				</div>
+
+				<div class="hero__visual" aria-hidden="true">
+
+					<!-- Copas brindando -->
+
+					<svg class="cheers" viewBox="0 0 220 160">
+
+						<g class="glass left">
+
+							<path d="M60 20 l-18 60 a28 28 0 0 0 56 0 l-18 -60 z" class="glass-bowl" />
+
+							<rect x="69" y="80" width="4" height="40" rx="2" class="glass-stem" />
+
+							<rect x="52" y="120" width="38" height="8" rx="4" class="glass-base" />
+
+						</g>
+
+						<g class="glass right">
+
+							<path d="M160 20 l18 60 a28 28 0 0 1 -56 0 l18 -60 z" class="glass-bowl" />
+
+							<rect x="147" y="80" width="4" height="40" rx="2" class="glass-stem" />
+
+							<rect x="130" y="120" width="38" height="8" rx="4" class="glass-base" />
+
+						</g>
+
+						<g class="sparkles">
+
+							<circle cx="110" cy="30" r="2" />
+
+							<circle cx="96" cy="24" r="1.8" />
+
+							<circle cx="124" cy="22" r="1.6" />
+
+						</g>
+
+					</svg>
+
+				</div>
+
+			</div>
+
+			<canvas id="confetti" aria-hidden="true"></canvas>
+
+		</section>
+
+		<!-- Servicios -->
+
+		<section id="servicios" class="section" aria-labelledby="servicios-title">
+
+			<div class="container">
+
+				<h2 id="servicios-title">Soluciones digitales que impulsan tu marca</h2>
+
+				<p class="section__lead">UX/UI claro, desarrollo sólido y automatizaciones que ahorran tiempo. Todo con foco en negocio.</p>
+
+				<div class="cards">
+
+					<article class="card">
+
+						<i data-lucide="layout-dashboard"></i>
+
+						<h3>Diseño & UX/UI</h3>
+
+						<p>Interfaces limpias y predictivas que guían a las personas a tomar acción. Diseño con criterio, no con humo.</p>
+
+						<ul role="list" class="card__list">
+
+							<li>Arquitectura de información</li>
+
+							<li>Wireframes & prototipos</li>
+
+							<li>UI System + tokens</li>
+
+						</ul>
+
+					</article>
+
+					<article class="card">
+
+						<i data-lucide="code-xml"></i>
+
+						<h3>Desarrollo Web</h3>
+
+						<p>HTML5 semántico, CSS moderno, JS mínimo. Rendimiento y calidad para crecer sin dolores.</p>
+
+						<ul role="list" class="card__list">
+
+							<li>WordPress + Bricks / Webflow</li>
+
+							<li>Plantillas reutilizables</li>
+
+							<li>Optimización CWV</li>
+
+						</ul>
+
+					</article>
+
+					<article class="card">
+
+						<i data-lucide="bot"></i>
+
+						<h3>Automatización</h3>
+
+						<p>Flujos Make/n8n y APIs para que tu operación escale con costos controlados.</p>
+
+						<ul role="list" class="card__list">
+
+							<li>Integración CRM/Sheets</li>
+
+							<li>Alertas y logs</li>
+
+							<li>Rutas por intención</li>
+
+						</ul>
+
+					</article>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- Planes -->
+
+		<section id="planes" class="section section--alt" aria-labelledby="planes-title">
+
+			<div class="container">
+
+				<h2 id="planes-title">Planes simples para empezar bien</h2>
+
+				<p class="section__lead">Elegí el nivel según tu etapa. El <strong>mantenimiento mensual</strong> se factura <strong>por separado</strong> y es opcional según alcance.</p>
+
+				<div class="pricing">
+
+					<article class="plan">
+
+						<h3>Starter</h3>
+
+						<p class="price">$ — Proyecto base</p>
+
+						<ul role="list" class="plan__list">
+
+							<li>Landing 1–3 secciones</li>
+
+							<li>UX/UI base + tokens</li>
+
+							<li>SEO técnico inicial</li>
+
+						</ul>
+
+						<p class="note">Mantenimiento mensual (aparte): desde $</p>
+
+						<a href="#contacto" class="btn btn--primary ripple">Quiero este</a>
+
+					</article>
+
+					<article class="plan featured">
+
+						<div class="badge">Recomendado</div>
+
+						<h3>Growth</h3>
+
+						<p class="price">$$ — Web + CMS</p>
+
+						<ul role="list" class="plan__list">
+
+							<li>5–8 secciones + Blog/CPT</li>
+
+							<li>Componentes reutilizables</li>
+
+							<li>Analítica + performance</li>
+
+						</ul>
+
+						<p class="note">Mantenimiento mensual (aparte): desde $$</p>
+
+						<a href="#contacto" class="btn btn--primary ripple">Escalar ahora</a>
+
+					</article>
+
+					<article class="plan">
+
+						<h3>Pro</h3>
+
+						<p class="price">$$$ — Sistema a medida</p>
+
+						<ul role="list" class="plan__list">
+
+							<li>Arquitectura avanzada</li>
+
+							<li>Automatizaciones Make/n8n</li>
+
+							<li>Soporte y mejoras</li>
+
+						</ul>
+
+						<p class="note">Mantenimiento mensual (aparte): a cotizar</p>
+
+						<a href="#contacto" class="btn btn--primary ripple">Hablemos</a>
+
+					</article>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- Proyectos -->
+
+		<section id="proyectos" class="section" aria-labelledby="proyectos-title">
+
+			<div class="container">
+
+				<h2 id="proyectos-title">Casos reales. Resultados medibles.</h2>
+
+				<p class="section__lead">Desarrollos con foco en conversión, SEO y performance. Mantenemos lo simple y efectivo.</p>
+
+				<div class="grid-logos" aria-label="Logos de clientes (ficticios)">
+
+					<span>▲</span><span>■</span><span>◆</span><span>●</span><span>▣</span>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- Equipo -->
+
+		<section id="equipo" class="section" aria-labelledby="equipo-title">
+
+			<div class="container">
+
+				<h2 id="equipo-title">Equipo ágil y expeditivo</h2>
+
+				<p class="section__lead">Procesos claros, entregas rápidas y comunicación directa.</p>
+
+				<div class="cards cards--mini">
+
+					<article class="card mini">
+
+						<i data-lucide="sparkles"></i>
+
+						<h3>Diseño</h3>
+
+						<p>Sistema visual, componentes y micro-interacciones.</p>
+
+					</article>
+
+					<article class="card mini">
+
+						<i data-lucide="server-cog"></i>
+
+						<h3>Dev</h3>
+
+						<p>Stack estable, seguro y escalable.</p>
+
+					</article>
+
+					<article class="card mini">
+
+						<i data-lucide="chart-line"></i>
+
+						<h3>Crecimiento</h3>
+
+						<p>SEO técnico, analítica y experimentos.</p>
+
+					</article>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- FAQ -->
+
+		<section id="faq" class="section section--alt" aria-labelledby="faq-title">
+
+			<div class="container">
+
+				<h2 id="faq-title">Preguntas frecuentes</h2>
+
+				<details class="faq">
+
+					<summary><i data-lucide="circle-help"></i> ¿Qué entrego en el MVP?</summary>
+
+					<p>Un sitio rápido, accesible, con copy claro, analytics configurado y base para crecer.</p>
+
+				</details>
+
+				<details class="faq">
+
+					<summary><i data-lucide="shield"></i> ¿Cómo cuidan seguridad y performance?</summary>
+
+					<p>Buenas prácticas (HTTPS/HSTS, CSP), hosting sólido, cache/CDN y auditorías de CWV.</p>
+
+				</details>
+
+				<details class="faq">
+
+					<summary><i data-lucide="test-tube"></i> ¿Cómo iteramos?</summary>
+
+					<p>Ciclos cortos con métricas: medimos, aprendemos y mejoramos.</p>
+
+				</details>
+
+			</div>
+
+		</section>
+
+		<!-- Crear cuenta -->
+
+		<section id="crear-cuenta" class="section" aria-labelledby="crear-title">
+
+			<div class="container">
+
+				<h2 id="crear-title">Crear cuenta</h2>
+
+				<form class="form" id="form-signup" novalidate>
+
+					<div class="field">
+
+						<i data-lucide="user-plus"></i>
+
+						<input type="text" name="nombre" placeholder="Nombre" autocomplete="name" required />
+
+					</div>
+
+					<div class="field">
+
+						<i data-lucide="mail"></i>
+
+						<input type="email" name="email" placeholder="Email" autocomplete="email" required />
+
+					</div>
+
+					<div class="field">
+
+						<i data-lucide="lock"></i>
+
+						<input type="password" name="password" placeholder="Contraseña" required minlength="6" />
+
+					</div>
+
+					<button type="submit" class="btn btn--primary ripple">Crear cuenta</button>
+
+					<p class="form-msg" aria-live="polite"></p>
+
+				</form>
+
+			</div>
+
+		</section>
+
+		<!-- Contacto -->
+
+		<section id="contacto" class="section" aria-labelledby="contacto-title">
+
+			<div class="container">
+
+				<h2 id="contacto-title">Hablemos de tu próximo paso digital</h2>
+
+				<p class="section__lead">Contanos tu idea y armemos una estrategia clara, medible y sin vueltas.</p>
+
+				<form class="form" id="form-contact" novalidate>
+
+					<div class="field">
+
+						<i data-lucide="user"></i>
+
+						<input type="text" name="nombre" placeholder="Nombre" autocomplete="name" required />
+
+					</div>
+
+					<div class="field">
+
+						<i data-lucide="mail"></i>
+
+						<input type="email" name="email" placeholder="Email" autocomplete="email" required />
+
+					</div>
+
+					<div class="field">
+
+						<i data-lucide="phone"></i>
+
+						<input type="tel" name="tel" placeholder="Teléfono (opcional)" autocomplete="tel" />
+
+					</div>
+
+					<div class="field textarea">
+
+						<i data-lucide="message-square"></i>
+
+						<textarea name="mensaje" rows="4" placeholder="Contanos brevemente tu proyecto" required></textarea>
+
+					</div>
+
+					<button type="submit" class="btn btn--primary ripple">
+
+						<i data-lucide="send"></i> Enviar consulta
+
+					</button>
+
+					<p class="form-msg" aria-live="polite"></p>
+
+				</form>
+
+				<p style="margin-top:1.2rem">
+
+					o envíanos un WhatsApp directo:
+
+					<a class="btn btn--ghost ripple" href="https://wa.me/5491171622332" target="_blank" rel="noopener">
+
+						<i data-lucide="message-circle"></i> WhatsApp
+
+					</a>
+
+				</p>
+
+			</div>
+
+		</section>
+
+	</main>
+
+	<!-- Footer -->
+
+	<footer class="footer" role="contentinfo">
+
+		<div class="container footer__grid">
+
+			<div class="footer__brand">
+
+				<h3>Loomin</h3>
+
+				<p>Agencia digital independiente. Diseño, desarrollo y estrategia para marcas con propósito.</p>
+
+				<p class="fine">Hecho con criterio en Argentina.</p>
+
+			</div>
+
+			<nav class="footer__col" aria-label="Sitio">
+
+				<h4>Sitio</h4>
+
+				<ul role="list">
+
+					<li><a class="ripple" href="#servicios">Servicios</a></li>
+
+					<li><a class="ripple" href="#planes">Planes</a></li>
+
+					<li><a class="ripple" href="#proyectos">Proyectos</a></li>
+
+					<li><a class="ripple" href="#equipo">Equipo</a></li>
+
+					<li><a class="ripple" href="#faq">FAQ</a></li>
+
+				</ul>
+
+			</nav>
+
+			<nav class="footer__col" aria-label="Legal">
+
+				<h4>Legal</h4>
+
+				<ul role="list">
+
+					<li><a class="ripple" href="#">Términos</a></li>
+
+					<li><a class="ripple" href="#">Privacidad</a></li>
+
+					<li><a class="ripple" href="#">Cookies</a></li>
+
+					<li><a class="ripple" href="sitemap.xml">Sitemap</a></li>
+
+				</ul>
+
+			</nav>
+
+			<div class="footer__col">
+
+				<h4>Contacto</h4>
+
+				<ul role="list" class="contacts">
+
+					<li><i data-lucide="mail"></i> <a class="ripple" href="mailto:hola@loomin.studio">hola@loomin.studio</a></li>
+
+					<li><i data-lucide="phone"></i> <a class="ripple" href="tel:+5491171622332">+54 9 11 7162 2332</a></li>
+
+					<li class="social">
+
+						<a class="ripple" href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+
+						<a class="ripple" href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+
+						<a class="ripple" href="https://wa.me/5491171622332" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+
+					</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+		<p class="copy">© 2025 Loomin. Todos los derechos reservados.</p>
+
+	</footer>
+
+	<!-- FABs -->
+
+	<div class="fabs" aria-label="Acciones rápidas">
+
+		<button class="fab ripple" data-action="top" aria-label="Ir al inicio"><i data-lucide="arrow-up"></i></button>
+
+		<button class="fab ripple" data-action="theme" aria-label="Cambiar tema"><i data-lucide="moon"></i></button>
+
+		<a class="fab ripple" href="https://wa.me/5491171622332" target="_blank" rel="noopener" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a>
+
+	</div>
+
+	<!-- Dock centrado (solo iconos) -->
+
+	<nav class="dock dock--icons" aria-label="Dock principal">
+
+		<a class="dock__btn ripple" href="#main" aria-label="Inicio" data-title="Inicio">
+
+			<i data-lucide="home"></i>
+
+		</a>
+
+		<a class="dock__btn ripple" href="#servicios" aria-label="Servicios" data-title="Servicios">
+
+			<i data-lucide="grid-3x3"></i>
+
+		</a>
+
+		<a class="dock__btn ripple" href="#contacto" aria-label="Contacto" data-title="Contacto">
+
+			<i data-lucide="mail"></i>
+
+		</a>
+
+		<a class="dock__btn ripple" href="#crear-cuenta" aria-label="Crear cuenta" data-title="Crear cuenta">
+
+			<i data-lucide="user-plus"></i>
+
+		</a>
+
+		<button class="dock__btn ripple" data-action="theme" aria-label="Tema" data-title="Tema">
+
+			<i data-lucide="sun-moon"></i>
+
+		</button>
+
+	</nav>
+
+	<!-- Lucide -->
+
+	<script src="https://unpkg.com/lucide@latest"></script>
+
+</body>
+
+</html>
